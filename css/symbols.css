@@ -1,0 +1,72 @@
+body {
+    background-color: aquamarine;
+}
+p{
+    font-size: 50px;
+    color: red;
+}
+.ex1{
+    font-family: cursive;
+    font-weight: 700;
+}
+.ex2{
+    font-family:'Lucida Console', 'Courier New', Courier, monospace;
+    font-style: oblique;
+}
+.ex3{
+font-family: 'Sofia Sans Extra Condensed', sans-serif;
+font-style: italic;
+text-transform: capitalize;
+}
+.ex4{
+    font-family: 'Kelly Slab', cursive;
+    text-transform: lowercase;
+}
+.ex5{
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.ex6{
+    font-family: 'Rubik Spray Paint', cursive;
+}
+.ex7{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: green;
+    text-underline-position: under;    
+}
+.ex8{
+    text-decoration: underline;
+    text-decoration-style:dotted;
+    text-decoration-color: purple;
+    text-underline-position: under;    
+}
+.ex9{
+    text-shadow: 3px -3px 10px blue;  
+}
+.ex10{
+    text-shadow: 2px 2px blue, 4px 4px 15px white;
+    font-weight: 700;  
+}
+.ex11{
+    text-shadow:0 0 15px orange;
+}
+.ex12{
+    text-decoration: underline;
+    text-decoration-style:solid ;
+    text-decoration-color:black;
+    text-underline-position: under;    
+}
+.ex13{
+    font-size: 2.5em;
+    font-weight:700;
+    color:chocolate;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px -2px blue, 4px 4px 15px white;
+}
+.ex14 {
+    font-variant-numeric: oldstyle-nums;
+    font-family: 'Fira Sans',sans-serif;
+    font-kerning: normal;
+}

@@ -1,0 +1,52 @@
+body {
+    overflow-x: hidden;
+    background: #f9f2ef;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+.article-content {
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+}
+
+.article-content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.article-content p {
+    padding: 0 0 16px 0;
+}
+
+.image-box {
+    margin: 15px auto 25px auto;
+}
+
+.tb-image-holder {
+    text-align: center;
+    margin: 11px auto 5px auto;
+}
+
+.tb-text {
+    text-align: center;
+    padding: 3px 0px 2px 0px;
+    font-size: 13px;
+    color: #111;
+}
+
+.tb-image-holder img {
+    margin-bottom: 3px;
+}
+
+.up {
+    position: fixed;
+    left: 5%;
+    bottom: 0;
+}
+
+.up img {
+    height: 50px;
+}

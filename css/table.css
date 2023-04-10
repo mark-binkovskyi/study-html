@@ -1,0 +1,46 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;700&display=swap');
+body{
+    background-color: blueviolet;
+}
+p {
+    font-size: 50px;
+    border: solid 30px;
+    width: 50%;
+    text-align: center;
+    border-image: linear-gradient(violet, pink) 30;
+}
+
+table {
+    border: double 2px darkred;
+    width: 50%;
+}
+
+th, td {
+    border: solid 1px fuchsia;
+    width: 25%;
+    height: 1cm;
+    font-size: 24px;
+}
+
+tr:hover {
+    background-color: lightgrey;
+}
+
+td:hover {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    background-image: url('../img/pride-rainbow.gif');
+}
+tr:nth-child(even){
+    background-color: aquamarine;
+}
+tr:nth-child(odd){
+    background-color: white;
+}
+caption{
+    font-size: 50px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}

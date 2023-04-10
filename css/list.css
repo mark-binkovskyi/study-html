@@ -1,0 +1,31 @@
+p {
+    font-size: 50px;
+    color: aqua;
+    background-image: url("../img/modern-gold-background-free-vector.jpg");
+    background-size: cover;
+    border: 50px;
+    width: 50%;
+}
+ul, ol, dl {
+    font-size: 24px;
+    color: darkorchid;
+    margin-left: 100px;
+}
+ul li, ol li { 
+    padding-left: 10px;
+}
+ul li::marker {
+    color: goldenrod;
+    font-size: 1.5em;
+}
+ol li::marker {
+    color: chocolate;
+    font-size: 1.3em;
+}
+ul {
+    background-image: url("../img/b-i.jpg");
+}
+
+ol li {
+    background: linear-gradient(pink, lightblue, yellowgreen, orange);
+}

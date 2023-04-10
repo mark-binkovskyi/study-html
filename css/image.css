@@ -1,0 +1,40 @@
+body {
+background-image: url("https://cdna.artstation.com/p/assets/images/images/033/382/314/original/ludo-west-sleepykirb.gif");
+background-size: 250px;
+background-repeat: no-repeat;
+background-position: 100% 100% ;
+background-attachment: fixed;
+}
+p {
+    font-size: 1in;
+    color: aquamarine;
+    background-image: url('https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg'),
+                      url('../img/double-color-futuristic-neon-background.jpg');
+    background-size: cover;
+}
+.bigimage{
+    width: 300px;
+    height: 500px;
+    background-color: navy;
+    background-image: url('https://images.freecreatives.com/wp-content/uploads/2015/10/moon-hd-desktop-wallpaper.jpg');
+    background-size: cover ;
+    border-style: groove;
+    border-color: blueviolet;
+    border-width: 5px;
+    border-radius: 30% 50%;
+    margin-left: 50px;
+}
+.img1{
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 15%;
+    box-shadow: 20px -20px 50px darkred;
+    border: dashed 8px yellow;
+}
+.biggif {
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/kirby.gif'), url('../img/Kirby64.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
