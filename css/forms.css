@@ -1,0 +1,25 @@
+div {
+    font-size: 50px;
+    color: darkblue;
+    background-color: lightgoldenrodyellow;
+}
+
+.cqe {
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    font-size: 36px;
+    color: blueviolet;
+}
+
+.qet {
+    font-size: 36px;
+    color: darkblue;
+    background-color: lightgoldenrodyellow;
+}
