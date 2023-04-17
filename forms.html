@@ -7,10 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/forms.css" />
   <title>Forms</title>
-
 </head>
 
 <body>
+  <p class="qet">Розрахунок периметру і площі трикутниа</p>
+  <form name="qef" action="javascript:triangle()">
+
+    a: <input class="cqe" type="text" name="a" size="4" value="3" />
+    <br />
+    b: <input class="cqe" type="text" name="b" size="4" value="4" />
+    <br />
+    c: <input class="cqe" type="text" name="c" size="4" value="5" />
+    <br />
+    <input class="btn" type="submit" name="submit_qe" value="Розрахувати" />
+    <input class="btn" type="reset" name="reset_qe" value="Скинути" />
+  </form>
+  <p class="qet"> Рішення: <span id="qe_sol">Введіть сторони трикуника та натисніть розрахувати</span></p>
   <div>Ми вивчаємо форми</div>
   <form name="f1" action="">
     Текст <br />
@@ -75,23 +87,9 @@
       <option value="it">італійська</option>
     </select>
   </form>
-  <p class="qet">Розрахунок периметру і площі трикутниа</p>
-  <form name="qef" action="javascript:triangle()">
-
-    a: <input class="cqe" type="text" name="a" size="4" value="3" />
-    <br />
-    b: <input class="cqe" type="text" name="b" size="4" value="4" />
-    <br />
-    c: <input class="cqe" type="text" name="c" size="4" value="5" />
-    <br />
-    <input class="btn" type="submit" name="submit_qe" value="Розрахувати" />
-    <input class="btn" type="reset" name="reset_qe" value="Скинути" />
-  </form>
-  <p class="qet"> Рішення: <span id="qe_sol">Введіть сторони трикуника та натисніть розрахувати</span></p>
 </body>
 <script>
   function triangle() {
-    let root1, root2;
     let result;
     let sol = document.getElementById("qe_sol");
 
@@ -101,7 +99,7 @@
     let c = document.qef.c.value * 1;
 
     if ((a <= 0 || b <= 0 || c <= 0)
-      || (a + b <= c) || (a + c) <= b(b + c) <= a) {
+      || (a + b <= c) || (a + c) <= b || (b + c) <= a) {
       result = 'Такого трикутика не існує!';
     }
     else {
@@ -110,31 +108,6 @@
       let S = Math.sqrt(p * (p - a) * (p - b) * (p - c));
       result = `Периметр трикутника = ${P} <br/> Площа трикутника = ${S}`;
     }
-
-
-    /*
-        // calculate discriminant
-        let D = b ** 2 - 4 * a * c;
-    
-        // condition for real and different roots
-        if (D > 0) {
-          root1 = (-b + Math.sqrt(D)) / (2 * a);
-          root2 = (-b - Math.sqrt(D)) / (2 * a);
-          // result
-          result = `x1 = ${root1} x2 = ${root2}`;
-        }
-    
-        // condition for real and equal roots
-        else if (D == 0) {
-          root1 = root2 = -b / (2 * a);
-          // result
-          result = `x = ${root1}`;
-        }
-        // if roots are not real
-        else {
-          // result
-          result = 'Квадратне рівняння коренів не має';
-        }*/
     sol.innerHTML = result;
   }
 </script>
