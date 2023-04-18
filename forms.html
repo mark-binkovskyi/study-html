@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <p class="qet">Розрахунок периметру і площі трикутниа</p>
+  <p class="qet">Розрахунок периметру і площі трикутника</p>
   <form name="qef" action="javascript:triangle()">
 
     a: <input class="cqe" type="text" name="a" size="4" value="3" />
@@ -87,29 +87,28 @@
       <option value="it">італійська</option>
     </select>
   </form>
+  <script>
+    function triangle() {
+      let result;
+      let sol = document.getElementById("qe_sol");
+  
+      // take input from the user
+      let a = document.qef.a.value * 1;
+      let b = document.qef.b.value * 1;
+      let c = document.qef.c.value * 1;
+  
+      if ((a <= 0 || b <= 0 || c <= 0)
+        || (a + b <= c) || (a + c) <= b || (b + c) <= a) {
+        result = 'Такого трикутика не існує!';
+      }
+      else {
+        let P = a + b + c;
+        let p = P / 2;
+        let S = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        result = `Периметр трикутника = ${P} <br/> Площа трикутника = ${S}`;
+      }
+      sol.innerHTML = result;
+    }
+  </script>  
 </body>
-<script>
-  function triangle() {
-    let result;
-    let sol = document.getElementById("qe_sol");
-
-    // take input from the user
-    let a = document.qef.a.value * 1;
-    let b = document.qef.b.value * 1;
-    let c = document.qef.c.value * 1;
-
-    if ((a <= 0 || b <= 0 || c <= 0)
-      || (a + b <= c) || (a + c) <= b || (b + c) <= a) {
-      result = 'Такого трикутика не існує!';
-    }
-    else {
-      let P = a + b + c;
-      let p = P / 2;
-      let S = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-      result = `Периметр трикутника = ${P} <br/> Площа трикутника = ${S}`;
-    }
-    sol.innerHTML = result;
-  }
-</script>
-
 </html>
