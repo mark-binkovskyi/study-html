@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        font-size: 50px;
+        background-color: blue;
+        display: inline;
+    }
+
+    span {
+        display: inline;
+    }
+
+    #first {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        border-top: dashed 10px navy;
+        border-bottom: dotted 10px yellow;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    #second {
+        width: 1500px;
+        height: 500px;
+        background-color: blueviolet;
+        border: double 10px red;
+        padding: 10px;
+        overflow: visible;
+    }
+
+    #third,
+    #fourth {
+        background-color: pink;
+        height: 100px;
+        width: 600px;
+        padding: 50px;
+        font-size: 50px;
+        color: blue;
+        border: solid 10px orange;
+        margin: 10px;
+        display: block;
+        float: left;
+    }
+
+    li {
+        background-color: aqua;
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <p>Ми вивчаємо роботу <span>з блоками</span></p>
+    <p>Ми вивчаємо роботу <span>з блоками</span></p>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>fourth</li>
+    </ul>
+    <div style="width: 20%;">
+        <div style="background-color: darkorchid">Привіт, я - блок!</div>
+    </div>
+    <div id="first"></div>
+    <div id="second">
+        <div id="third">Привіт, я - третій блок!</div>
+        <div id="fourth">Привіт, я - четвертий блок!</div>
+    </div>
+</body>
+
+</html>
