@@ -52,12 +52,13 @@ li:hover{
 }
 article{
     text-align: justify;
-    height: 150px;
-    width: 50%;
+    height: 500px;
+    width: 90%;
     background-color: lightseagreen;
     border: solid 5px lightpink;
     margin: 50px;
     padding: 10px;
+    overflow-x: hidden;
 }
 
 /* CSS */
@@ -86,7 +87,6 @@ article{
   -webkit-user-select: none;
   touch-action: manipulation;
   margin: 20px;
-  float: down;
 }
 
 .button-73:hover {
@@ -223,4 +223,43 @@ article{
     background: #ff6600;
     color: white;
   }
+  .image-box {
+    margin: 15px auto 25px auto;
+}
+.artstart {
+  text-transform: uppercase;
+}
+.article-content {
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+}
+.article-content p {
+  padding: 0 0 16px 0;
+}
+.tb-image-holder {
+  text-align: center;
+  margin: 11px auto 5px auto;
+}
+
+.tb-text {
+  text-align: center;
+  padding: 3px 0px 2px 0px;
+  font-size: 13px;
+  color: #111;
+}
+
+.tb-image-holder img {
+  margin-bottom: 3px;
+}
+
+.up {
+  position: fixed;
+  left: 5%;
+  bottom: 0;
+}
+
+.up img {
+  height: 50px;
+}
 
