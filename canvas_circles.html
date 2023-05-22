@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <style>
+        #car{
+            position: relative;
+            cursor: pointer;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <img id="car" src="img/hedgehog-car-3.gif" />
+    <canvas id="myCanvas" style="width:100%;height:100%"></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const cxt = canvas.getContext("2d");
+        const colours = ["red", "green", "brown", "blue", "yellow", "aqua", "cyan", "magenta", "fuchsia", "gray", "black"];
+        const circleNum = 50; 
+        const maxX = canvas.width;                                         
+        const maxY = canvas.height;
+        const r = Math.floor(canvas.height / 10);                                        
+        for(let i=0; i<circleNum; i++){
+            const x = Math.floor(Math.random() * maxX);
+            const y = Math.floor(Math.random() * maxY);
+            const c = Math.floor(Math.random() * colours.length);
+            cxt.beginPath();
+            cxt.arc(x, y, r, 0, Math.PI * 2, false);
+           
+            cxt.fillStyle = colours[c];
+            cxt.closePath(); 
+            cxt.fill(); 
+        }
+
+        const car = document.getElementById("car");
+        car.onclick = function() {
+        let start = Date.now();
+       
+        let interval = setInterval(function() {
+            let passed = Date.now() - start;
+            car.style.left = Math.floor(passed / 5) + "px";
+            if (passed > 4000) 
+                clearInterval(interval);     
+        }, 20);
+      };
+
+    </script>
+
+</body>
+</html>
